@@ -22,7 +22,7 @@ contract Product {
         _;
     }
 
-    function createOrUpdateRecord(string memory _brand, string memory _item, uint256 _year, string memory _barcode) public onlyAdmin {
+    function createOrUpdateRecord(string memory _brand, string memory _item, uint256 _year, string memory _barcode) public  {
         records[msg.sender] = Record({
             brand: _brand,
             item: _item,
